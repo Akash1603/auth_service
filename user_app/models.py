@@ -1,9 +1,9 @@
-from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 
 # Create your models here.
-class UserProfile(User):
+class UserProfile(AbstractUser):
     mobile_no = models.IntegerField()
     age = models.IntegerField()
 
